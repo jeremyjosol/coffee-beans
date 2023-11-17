@@ -91,7 +91,7 @@ class CoffeeBeanControl extends React.Component {
       buttonText = "Return to Coffee Bean List";
     }
     else if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewCoffeeBeanForm onNewCoffeeBeanCreation={this.handleAddingNewCoffeeBeanToList}  />;
+      currentlyVisibleState = <NewCoffeeBeanForm onNewCoffeeBeanCreation={this.handleAddNewCoffeeBeanToList}  />;
       buttonText = "Return to Coffee Bean List";
     } else {
       currentlyVisibleState = <CoffeeBeanList coffeeBeanList={this.state.mainCoffeeBeanList} onCoffeeBeanSelection={this.handleChangingSelectedCoffeeBean} />;
