@@ -12,8 +12,8 @@ function CoffeeBeanList(props) {
           name={bean.name}
           origin={bean.origin}
           roast={bean.roast}
-          price={bean.price}
-          availability={bean.availability}
+          price={Number(bean.price)}
+          availability={Number(bean.availability)}
           id={bean.id}
           key={bean.id}/>
         )}

@@ -3,6 +3,7 @@ import NewCoffeeBeanForm from './NewCoffeeBeanForm';
 import CoffeeBeanList from './CoffeeBeanList';
 import CoffeeBeanDetail from './CoffeeBeanDetail';
 import EditCoffeeBeanForm from './EditCoffeeBeanForm';
+import { v4 } from 'uuid';
 
 class CoffeeBeanControl extends React.Component {
 
@@ -18,7 +19,8 @@ class CoffeeBeanControl extends React.Component {
           origin: 'East Africa',
           roast: 'Light Roast',
           price: 15.99,
-          availability: 130
+          availability: 130,
+          id: v4()
         }
       ]
     }
