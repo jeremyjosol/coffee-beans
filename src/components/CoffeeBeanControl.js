@@ -28,7 +28,7 @@ class CoffeeBeanControl extends React.Component {
     if (this.state.selectedCoffeeBean != null) {
       this.setState({
         formVisibleOnPage: false,
-        selectedCoffee: null,
+        selectedCoffeeBean: null,
         editing: false
       });
     } else {
@@ -57,6 +57,23 @@ class CoffeeBeanControl extends React.Component {
     const newMainCoffeeBeanList = this.state.mainCoffeeBeanList.filter(bean => bean.id !== id);
     this.setState({
       mainCoffeeBeanList: newMainCoffeeBeanList,
+      selectedCoffeeBean: null
+    });
+  }
+
+  handleEditClick = () => {
+    this.setState({
+      editing: true 
+    });
+  }
+
+  handleEditingCoffeeBeanInList = (beanToEdit) => {
+    const editedMAinCoffeeBeanList = this.state.mainCoffeeBeanList
+      .filter(bean => bean.id !== this.state.selectedCoffeeBean.id)
+      .concat(beanToEdit);
+    this.setState({
+      mainCoffeeBeanList: editedMAinCoffeeBeanList,
+      editing: false,
       selectedCoffeeBean: null
     });
   }
