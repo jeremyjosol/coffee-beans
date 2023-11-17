@@ -15,7 +15,7 @@ function ReusableForm(props) {
           <input type='text' name='roast' placeholder='Roast' required /> 
         </div>
         <div className="form-control">
-          <input type='number' name='price' min='0' placeholder='Price per lb' required />
+          <input type='number' name='price' min='0' step='0.01' placeholder='Price per lb' required />
         </div>
         <div className="form-control">
           <input type='number' name='availability' min='0' max='130' placeholder='Lbs available' required />
