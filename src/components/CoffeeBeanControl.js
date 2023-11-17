@@ -68,11 +68,11 @@ class CoffeeBeanControl extends React.Component {
   }
 
   handleEditingCoffeeBeanInList = (beanToEdit) => {
-    const editedMAinCoffeeBeanList = this.state.mainCoffeeBeanList
+    const editedMainCoffeeBeanList = this.state.mainCoffeeBeanList
       .filter(bean => bean.id !== this.state.selectedCoffeeBean.id)
       .concat(beanToEdit);
     this.setState({
-      mainCoffeeBeanList: editedMAinCoffeeBeanList,
+      mainCoffeeBeanList: editedMainCoffeeBeanList,
       editing: false,
       selectedCoffeeBean: null
     });
