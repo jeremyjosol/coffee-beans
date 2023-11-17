@@ -23,4 +23,41 @@ class CoffeeBeanControl extends React.Component {
       ]
     }
   }
+
+  handleAddButtonClick = () => { 
+    if (this.state.selectedCoffeeBean != null) {
+      this.setState({
+        formVisibleOnPage: false,
+        selectedCoffee: null,
+        editing: false
+      });
+    } else {
+      this.setState(prevState => ({
+        formVisibleOnPage: !prevState.formVisibleOnPage,
+      }));
+    }
+  }
+
+  handleAddNewCoffeeBeanToList = (newBean) => {
+    const newMainCoffeeBeanList = this.state.mainCoffeeBeanList.concat(newBean);
+    this.setState({
+      mainCoffeeBeanList: newMainCoffeeBeanList,
+      formVisibleOnPage: false 
+    });
+  }
+  
+  handleChangingSelectedCoffeeBean = (id) => {
+    const selectedCoffeeBean = this.state.mainCoffeeBeanList.filter(bean => bean.id === id)[0];
+    this.setState({
+      selectedCoffeeBean: selectedCoffeeBean 
+    });
+  }
+
+  handleDeletingCoffeeBean = (id) => {
+    const newMainCoffeeBeanList = this.state.mainCoffeeBeanList.filter(bean => bean.id !== id);
+    this.setState({
+      mainCoffeeBeanList: newMainCoffeeBeanList,
+      selectedCoffeeBean: null
+    });
+  }
 }
