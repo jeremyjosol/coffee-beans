@@ -77,4 +77,33 @@ class CoffeeBeanControl extends React.Component {
       selectedCoffeeBean: null
     });
   }
+
+  render(){
+    let currentlyVisibleState = null;
+    let buttonText = null;
+    if (this.state.editing) {
+      currentlyVisibleState = <EditCoffeeBeanForm bean = {this.state.selectedCoffeeBean} onEditCoffeeBean = {this.handleEditingCoffeeBeanInList} />
+      buttonText = "Return to Coffee Bean List";
+    } else if (this.state.selectedCoffeeBean != null) {
+      currentlyVisibleState = <CoffeeBeanDetail bean = {this.state.selectedCoffeeBean} 
+      onClickingDelete = {this.handleDeletingCoffeeBean}
+      onClickingEdit = {this.handleEditClick} />
+      buttonText = "Return to Coffee Bean List";
+    }
+    else if (this.state.formVisibleOnPage) {
+      currentlyVisibleState = <NewCoffeeBeanForm onNewCoffeeBeanCreation={this.handleAddingNewCoffeeBeanToList}  />;
+      buttonText = "Return to Coffee Bean List";
+    } else {
+      currentlyVisibleState = <CoffeeBeanList coffeeBeanList={this.state.mainCoffeeBeanList} onCoffeeBeanSelection={this.handleChangingSelectedCoffeeBean} />;
+      buttonText = "Add Coffee Bean";
+    }
+    return (
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button onClick={this.handleAddButtonClick}>{buttonText}</button>
+      </React.Fragment>
+    );
+  }
 }
+
+export default CoffeeBeanControl;

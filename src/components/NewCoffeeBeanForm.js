@@ -12,7 +12,7 @@ function NewCoffeeBeanForm(props){
       name: event.target.name.value,
       origin: event.target.origin.value,
       roast: event.target.roast.value,
-      price: price,
+      price: event.target.price.value,
       availability: event.target.availability.value, 
       id: v4()
     });

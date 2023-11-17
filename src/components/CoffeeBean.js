@@ -15,7 +15,7 @@ const CoffeeBean = (props) => {
   );
 }
 
-Ticket.propTypes = {
+CoffeeBean.propTypes = {
   name: PropTypes.string,
   origin: PropTypes.string,
   roast: PropTypes.string,

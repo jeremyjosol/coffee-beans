@@ -9,7 +9,7 @@ function CoffeeBeanDetail(props){
         <h3>{bean.name} | {bean.origin}</h3>
         <h5>{bean.roast}</h5>
         <h5>${bean.price} per lb.</h5>
-        <h5>{coffee.available} lbs available.</h5>    
+        <h5>{bean.availability} lbs available.</h5>    
         <br />
         <button onClick={ props.onClickingEdit }>Edit</button> 
         <button onClick={()=> onClickingDelete(bean.id) }>Delete</button>
