@@ -8,7 +8,7 @@ const CoffeeBean = (props) => {
         <h3>{props.name} | {props.origin}</h3> 
         <h5>{props.roast}</h5>
         <h5>${props.price} per lbs.</h5>
-        <h5>{props.available} lbs available.</h5>
+        <h5>{props.availability} lbs available.</h5>
         <hr/>
       </div>
     </React.Fragment>
@@ -20,7 +20,7 @@ Ticket.propTypes = {
   origin: PropTypes.string,
   roast: PropTypes.string,
   price: PropTypes.string,
-  available: PropTypes.number,
+  availability: PropTypes.number,
   id: PropTypes.string, 
   whenCoffeeBeanClicked: PropTypes.func
 };
