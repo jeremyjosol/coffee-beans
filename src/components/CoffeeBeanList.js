@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 
 function CoffeeBeanList(props) {
 
+  if (props.coffeeBeanList.length === 0) {
+    return <h3>No available coffee beans.</h3>
+  }
+
   return (
     <React.Fragment>
       {props.coffeeBeanList.map((bean) =>
