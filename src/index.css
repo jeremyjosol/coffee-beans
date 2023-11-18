@@ -13,7 +13,7 @@ code {
 }
 
 .navbar {
-  background-color: #548b4a7f; 
+  background-color: #548b4a7f;
   color: white;
   padding: 5px;
 }
@@ -74,8 +74,8 @@ h1 {
   font-size: 2em;
 }
 
-.coffee-beans {
-  color: rgb(255, 255, 255);
+.coffee-bean:hover {
+  color: rgb(10, 116, 255);
 }
 
 .columns button {
