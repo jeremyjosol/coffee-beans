@@ -6,7 +6,7 @@ const CoffeeBean = (props) => {
   return (
     <React.Fragment>
       <div className='coffee-bean' onClick = {() => props.whenCoffeeBeanClicked(props.id)}>
-        <h2>{props.brand}</h2>
+        <h2 className='blue-bottle'><strong>{props.brand.toUpperCase()}</strong></h2>
         <h3>{props.name} | <em>{props.origin}</em></h3> 
         <h5>{props.roast}</h5>
         <h5>${props.price} per lb</h5>

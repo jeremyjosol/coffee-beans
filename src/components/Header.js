@@ -11,11 +11,11 @@ function Header({ scrollToControlSection }) {
           <br />
           <br />
           <div className='columnTwo'>
-            <h1>ORGANICALLY GROWN 
+            <h1><strong className='hero-sub'>ORGANICALLY GROWN</strong>
               <span className='coffee-beans'> COFFEE BEANS </span> 
-              ROASTED IN-HOUSE FOR A TASTY BREW.
+              ROASTED IN-HOUSE FOR A <strong className='hero-sub'>PURE</strong> AND <strong className='hero-sub'>FULL-FLAVORED</strong> CUP OF COFFEE.
             </h1>
-            <div id="orderSection" className='order'>
+            <div className='order'>
               <br />
               <br />
               <button onClick={scrollToControlSection}>EXPLORE</button>

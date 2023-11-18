@@ -17,7 +17,7 @@ function CoffeeBeanDetail(props) {
           <img src={imgCoffeeBag} alt='Coffee Bag' />
         </div>
         <div className='details'>
-          <h2>{bean.brand}</h2>
+          <h2><strong>{bean.brand}</strong></h2>
           <h3>{bean.name} | <em>{bean.origin}</em></h3>
           <h5>{bean.roast}</h5>
           <p>{bean.description}</p>

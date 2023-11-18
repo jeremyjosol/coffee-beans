@@ -54,7 +54,7 @@ code {
 .columns {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px; 
 }
 
@@ -67,10 +67,6 @@ code {
 .columnTwo {
   flex: 1;
   max-width: 500px;
-}
-
-.order {
-  flex: 2;
 }
 
 h1 {
@@ -101,6 +97,7 @@ h1 {
   border: none;
   font-family: 'Montserrat', sans-serif;
   outline: none;
+  margin: 0;
 }
 
 .columns button:hover {
@@ -112,6 +109,16 @@ h1 {
 .hero {
   font-size: 4em;
   color: rgb(255, 255, 255);
+}
+
+.hero-sub {
+  font-size: 1.09em;
+}
+
+.order {
+  flex: 1; /* Occupy available space */
+  margin-right: -1000px;
+  margin-top: -150px;
 }
 
 .control { 
@@ -183,5 +190,9 @@ h1 {
 .out-of-stock {
   color: red;
   font-style: italic;
+}
+
+.blue-bottle {
+  font-family: 'Montserrat', sans-serif;
 }
 
