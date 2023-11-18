@@ -15,14 +15,76 @@ code {
 .header {
   margin: auto;
   text-align: center;
-  border: 1px solid black;
   background: url('img/coffee-beans.jpg') no-repeat center center fixed;
   height: 100vh;
+  width: 100%;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white; 
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.101); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.columnTwo {
+  flex: 1;
+  max-width: 500px;
+}
+
+.order {
+  flex: 2;
+  max-width: 25
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.coffee-beans {
+  color: rgb(207, 132, 57);
+}
+
+.column button {
+  background-color: #6fc071;
+  border-radius: 10px;
+  color: white; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.hero {
+  font-size: 4em;
+  color: rgb(255, 255, 255);
 }
 
 

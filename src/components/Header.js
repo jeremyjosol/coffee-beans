@@ -3,11 +3,16 @@ import React from "react";
 function Header() {
   return (
     <div className='header'>
-      <div className='column'>
-        <h1>Exclusive coffee beans roasted in-house</h1>
-      </div>
-      <div className='column'>
-        <button>ORDER NOW</button>
+      <div className='columns'>
+        <div className='column'>
+          <h1 className='hero'>INDULGE IN THE ART OF FRESHNESS</h1> 
+          <div className='columnTwo'>
+            <h1>EXCLUSIVE <span className='coffee-beans'>COFFEE BEANS</span> ROASTED IN-HOUSE FOR YOUR SPECIAL BREW.</h1>
+            <div className='order'>
+              <button>ORDER NOW</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
