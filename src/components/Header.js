@@ -1,5 +1,6 @@
 import React from "react";
 import logo from ".././img/blue-bottle.jpg";
+import Navbar from "./Navbar";
 
 function Header({ scrollToControlSection }) {
   
