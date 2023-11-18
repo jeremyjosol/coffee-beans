@@ -11,7 +11,7 @@ function CoffeeBeanDetail(props) {
     <svg 
       stroke="currentColor" 
       fill="currentColor" 
-      stroke-width="0" viewBox="0 0 1024 1024" 
+      strokeWidth="0" viewBox="0 0 1024 1024" 
       height="1em" 
       width="1em" 
       xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +24,7 @@ function CoffeeBeanDetail(props) {
     <svg 
       stroke="currentColor" 
       fill="currentColor" 
-      stroke-width="0" 
+      strokeWidth="0" 
       viewBox="0 0 1024 1024" 
       height="1em" 
       width="1em" 
@@ -53,13 +53,13 @@ function CoffeeBeanDetail(props) {
           <button 
             className='btn btn-secondary btn-detail' 
             onClick={props.onClickingSell}>
-            <span class='sell'>SELL</span>
+            <span className='sell'>SELL</span>
           </button> 
           {' '}
           <button 
             className='btn btn-secondary btn-detail' 
             onClick={props.onClickingRestock}>
-            <span class='restock'>RESTOCK</span>
+            <span className='restock'>RESTOCK</span>
           </button>
           <button 
             className='btn btn-secondary btn-detail' 
