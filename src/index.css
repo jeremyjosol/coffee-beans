@@ -12,8 +12,8 @@ code {
 }
 
 .navbar {
-  background-color: #548a4b7f;
-  color: white;
+  background-color: #fffcf0;
+  color: black;
   padding: 5px;
 }
 
@@ -23,7 +23,7 @@ code {
 }
 
 .nav-links a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -173,4 +173,8 @@ h1 {
   width: 350px;
 }
 
+.out-of-stock {
+  color: red;
+  font-style: italic;
+}
 
