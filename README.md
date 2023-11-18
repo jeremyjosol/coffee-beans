@@ -1,7 +1,7 @@
 # Coffee Beans
 
 ## About
-This project is a 'Blue Bottle Coffee' themed coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding/editing new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for a diversity of device sizes, and incorporates smooth scrolling functionality using React to enhance the user experience.
+This project is a 'Blue Bottle Coffee' themed coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding/editing new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for a diversity of device sizes, and incorporates smooth scrolling functionality to enhance user experience.
 
 <img src='./src/img/coffee-beans-header.jpg'>
 
