@@ -74,6 +74,11 @@ h1 {
   font-size: 2em;
 }
 
+.coffee-bean {
+  margin: auto;
+  margin-top: 75px;
+}
+
 .coffee-bean:hover {
   background-color: rgba(0, 0, 0, 0.019);
   color: rgb(10, 116, 255);
@@ -98,11 +103,19 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-.control {
+.control { 
   margin: auto;
+  margin-bottom: 25px;
   text-align: center;
   max-width: 750px;
-  margin-bottom: 25px;
+} 
+
+.details {
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+  max-width: 750px;
 }
 
 .btn btn-secondary {

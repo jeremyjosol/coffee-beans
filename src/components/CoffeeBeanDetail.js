@@ -5,7 +5,8 @@ function CoffeeBeanDetail(props){
   const { bean, onClickingDelete } = props;
     return (
       <React.Fragment>
-        <h1>Coffee Bean Details</h1>
+        <div className='details'>
+        <h1>Details</h1>
         <h3>{bean.name} | {bean.origin}</h3>
         <h5>{bean.roast}</h5>
         <h5>${bean.price} per lb.</h5>
@@ -19,6 +20,7 @@ function CoffeeBeanDetail(props){
         <button className='btn btn-danger btn-sm' onClick={()=> onClickingDelete(bean.id) }>Delete</button>
         <br />
         <br />
+        </div>
         </React.Fragment>
     );
 }
