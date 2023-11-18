@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/coffee-beans/static/css/main.7e52820f.css",
-    "main.js": "/coffee-beans/static/js/main.e1f98452.js",
+    "main.js": "/coffee-beans/static/js/main.c78975ac.js",
     "static/js/787.4e710f13.chunk.js": "/coffee-beans/static/js/787.4e710f13.chunk.js",
     "static/media/coffee-bag.jpg": "/coffee-beans/static/media/coffee-bag.0200add0d0d8f4177a70.jpg",
     "static/media/coffee-fields.jpg": "/coffee-beans/static/media/coffee-fields.650261c904ae137732c9.jpg",
     "static/media/coffee-beans.jpg": "/coffee-beans/static/media/coffee-beans.b3634cc2b281931d65fe.jpg",
     "index.html": "/coffee-beans/index.html",
     "main.7e52820f.css.map": "/coffee-beans/static/css/main.7e52820f.css.map",
-    "main.e1f98452.js.map": "/coffee-beans/static/js/main.e1f98452.js.map",
+    "main.c78975ac.js.map": "/coffee-beans/static/js/main.c78975ac.js.map",
     "787.4e710f13.chunk.js.map": "/coffee-beans/static/js/787.4e710f13.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e52820f.css",
-    "static/js/main.e1f98452.js"
+    "static/js/main.c78975ac.js"
   ]
 }
