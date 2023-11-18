@@ -1,8 +1,7 @@
 body {
+  background-color: rgb(248, 247, 244);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Cormorant Garamond', serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -110,16 +109,34 @@ h1 {
   max-width: 750px;
 } 
 
-.details {
+.details-container {
   margin: auto;
   margin-top: 200px;
   margin-bottom: 200px;
   text-align: center;
   max-width: 750px;
+  display: flex;
 }
 
-.btn btn-secondary {
+.btn, .btn btn-secondary {
   padding: auto;
+  font-family: 'Oswald', sans-serif;
 }
+
+.image-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+}
+
 
 
