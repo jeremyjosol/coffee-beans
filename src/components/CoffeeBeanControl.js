@@ -80,6 +80,52 @@ class CoffeeBeanControl extends React.Component {
     });
   }
 
+  handleCoffeeBeanSale = (id) => {
+    this.setState((prevState) => {
+      const { selectedCoffeeBean, mainCoffeeBeanList } = prevState;
+  
+      const newCoffeeBeanList = mainCoffeeBeanList.map((bean) =>
+        bean.id === id && selectedCoffeeBean.availability > 0
+          ? { ...bean, availability: bean.availability - 1 }
+          : bean
+      );
+  
+      return {
+        mainCoffeeBeanList: newCoffeeBeanList,
+        selectedCoffeeBean: {
+          ...selectedCoffeeBean,
+          availability:
+            selectedCoffeeBean.availability > 0
+              ? selectedCoffeeBean.availability - 1
+              : 0,
+        },
+      };
+    });
+  };
+
+  handleCoffeeBeanRestock = (id) => {
+    this.setState((prevState) => {
+      const { selectedCoffeeBean, mainCoffeeBeanList } = prevState;
+  
+      const newCoffeeBeanList = mainCoffeeBeanList.map((bean) =>
+        bean.id === id && selectedCoffeeBean.availability < 130
+          ? { ...bean, availability: bean.availability + 1 }
+          : bean
+      );
+  
+      return {
+        mainCoffeeBeanList: newCoffeeBeanList,
+        selectedCoffeeBean: {
+          ...selectedCoffeeBean,
+          availability:
+            selectedCoffeeBean.availability < 130
+              ? selectedCoffeeBean.availability + 1
+              : 130,
+        },
+      };
+    });
+  };
+  
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
@@ -89,7 +135,9 @@ class CoffeeBeanControl extends React.Component {
     } else if (this.state.selectedCoffeeBean != null) {
       currentlyVisibleState = <CoffeeBeanDetail bean = {this.state.selectedCoffeeBean} 
       onClickingDelete = {this.handleDeletingCoffeeBean}
-      onClickingEdit = {this.handleEditClick} />
+      onClickingEdit = {this.handleEditClick} 
+      onClickingSell = {this.handleCoffeeBeanSale}
+      onClickingRestock = {this.handleCoffeeBeanRestock} />
       buttonText = "Return to Coffee Bean List";
     }
     else if (this.state.formVisibleOnPage) {

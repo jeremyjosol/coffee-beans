@@ -11,6 +11,8 @@ function CoffeeBeanDetail(props){
         <h5>${bean.price} per lb.</h5>
         <h5>{bean.availability} lbs available.</h5>    
         <br />
+        <button onClick={ props.onClickingSell }>Sell</button>
+        <button onClick={ props.onClickingRestock }>Restock</button>
         <button onClick={ props.onClickingEdit }>Edit</button> 
         <button onClick={()=> onClickingDelete(bean.id) }>Delete</button>
         </React.Fragment>
@@ -21,6 +23,7 @@ CoffeeBeanDetail.propTypes = {
     bean: PropTypes.object,
     onClickingDelete: PropTypes.func,
     onClickingEdit: PropTypes.func,
+    onClickingSell: PropTypes.func,
 };  
 
 export default CoffeeBeanDetail;
