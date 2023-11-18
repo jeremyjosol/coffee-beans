@@ -10,7 +10,7 @@ const CoffeeBean = (props) => {
         <h3 className='name'>{props.name} | <em>{props.origin}</em></h3> 
         <h5 className='roast'><strong>{props.roast.toUpperCase()}</strong></h5>
         <h5>${props.price} per lb</h5>
-        <h5 className='availability' style={{ color: props.availability <= 0 ? 'red' : 'inherit' }}>{props.availability > 0 ? 'In Stock' : props.availability === 0 ? 'Out of Stock' : `${props.availability} lbs available`}</h5>
+        <h5 className='availability'>{props.availability > 0 ? 'In Stock' : props.availability === 0 ? <span className='out-of-stock'>Out of Stock</span> : `${props.availability} lbs available`}</h5>
         <hr/>
       </div>
     </React.Fragment>
