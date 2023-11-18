@@ -75,7 +75,9 @@ h1 {
 }
 
 .coffee-bean:hover {
+  background-color: rgba(0, 0, 0, 0.019);
   color: rgb(10, 116, 255);
+  cursor: pointer;
 }
 
 .columns button {
