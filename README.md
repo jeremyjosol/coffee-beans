@@ -1,8 +1,6 @@
 # Coffee Shop
 
-A mock coffee shop web application built with React.
-
-<img src="./src/img/coffee-shop.jpg">
+<img src="./src/img/coffee-shop-diagram.jpg">
 
 ## Technologies Used
 
