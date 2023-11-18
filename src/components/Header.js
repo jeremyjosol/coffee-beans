@@ -8,7 +8,7 @@ function Header({ scrollToControlSection }) {
     <div className='header'>
       <div className='columns'>
         <div className='column'>
-          <h1 className='hero'>INDULGE IN THE ART OF FRESHNESS</h1> 
+          <h1 className='hero'>INDULGE IN THE ART OF <strong>FRESHNESS</strong></h1> 
           <br />
           <br />
           <div className='columnTwo'>
