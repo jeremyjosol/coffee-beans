@@ -30,7 +30,7 @@ class CoffeeBeanControl extends React.Component {
           origin: 'Ethiopia, Central Africa',
           roast: 'Medium Roast',
           price: 28.99,
-          availability: 90,
+          availability: 0,
           description: 'Sparkling yet grounded, Three Africas is roasted dark enough to be rounded and full, yet light enough to let flecks of berries and citrus shine. It’s an organic coffee that gives more than what the drinker is asking for: fruit, nuance, radiance, and a deep sweetness that wins over just about everyone.',
           id: v4()
         },
