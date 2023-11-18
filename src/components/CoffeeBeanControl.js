@@ -15,27 +15,33 @@ class CoffeeBeanControl extends React.Component {
       editing: false,
       mainCoffeeBeanList: [
         {
-          name: 'Blue Bottle Coffee Bright Home Blend',
-          origin: 'East Africa',
+          brand: 'Blue Bottle Coffee',
+          name: 'Bolivia Samaipata El Fuerte SL-28 Natural',
+          origin: 'Bolivia',
           roast: 'Light Roast',
           price: 15.99,
           availability: 130,
+          description: 'While Bolivia is known for its balanced profiles, this is brighter than you’d ever expect from the region. The Rodriguez family chose to naturally process the SL-28 cultivar, turning a brilliantly vivid Kenyan variety into an even brighter and fruitier expression of itself. Intense flavors of dark red berries mingle with a tactile jamminess for a complex, sweet, and subtly floral profile.',
           id: v4()
         },
         {
-          name: 'Blue Bottle Coffee Three Africas',
+          brand: 'Blue Bottle Coffee',
+          name: 'Three Africas',
           origin: 'Ethiopia, Central Africa',
           roast: 'Medium Roast',
           price: 13.00,
           availability: 90,
+          description: 'Sparkling yet grounded, Three Africas is roasted dark enough to be rounded and full, yet light enough to let flecks of berries and citrus shine. It’s an organic coffee that gives more than what the drinker is asking for: fruit, nuance, radiance, and a deep sweetness that wins over just about everyone.',
           id: v4()
         },
         {
-          name: 'Blue Bottle Coffee Bella Donovan',
+          brand: 'Blue Bottle Coffee',
+          name: 'Bella Donovan',
           origin: 'Ethiopia',
           roast: 'Dark Roast',
           price: 13.00,
           availability: 75,
+          description: 'A natural Ethiopian coffee with jammy berry notes brings a glimmer of fruit to the otherwise chocolate-heavy foundation. To add nuance, we roast these two coffees four different ways. The result is a blend that straddles the worlds of complexity and comfort with uncommon poise.',
           id: v4()
         },
       ]

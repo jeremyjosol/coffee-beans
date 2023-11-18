@@ -13,8 +13,10 @@ function CoffeeBeanDetail(props) {
           <img src={imgCoffeeBeans} alt='Coffee Beans' />
         </div>
         <div className='details'>
+          <h2>{bean.brand}</h2>
           <h3>{bean.name} | {bean.origin}</h3>
           <h5><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"></svg> {bean.roast}</h5>
+          <p>{bean.description}</p>
           <h5>${bean.price} per lb</h5>
           <h5>{bean.availability === 0 ? 'Out of Stock' : `${bean.availability} lbs available.`}</h5>
           <br />

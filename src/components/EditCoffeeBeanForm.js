@@ -9,11 +9,13 @@ function EditCoffeeBeanForm(props) {
     event.preventDefault();
     
     props.onEditCoffeeBean({
+      brand: event.target.name.value,
       name: event.target.name.value,
       origin: event.target.origin.value,
       roast: event.target.roast.value,
       price: event.target.price.value,
       availablility: event.target.availability.value,
+      description: event.target.description.value,
       id: bean.id
     });
   }

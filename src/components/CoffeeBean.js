@@ -16,11 +16,13 @@ const CoffeeBean = (props) => {
 }
 
 CoffeeBean.propTypes = {
+  brand: PropTypes.string,
   name: PropTypes.string,
   origin: PropTypes.string,
   roast: PropTypes.string,
   price: PropTypes.number,
   availability: PropTypes.number,
+  description: PropTypes.string,
   id: PropTypes.string, 
   whenCoffeeBeanClicked: PropTypes.func
 };

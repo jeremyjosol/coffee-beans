@@ -13,11 +13,13 @@ function CoffeeBeanList(props) {
       {props.coffeeBeanList.map((bean) =>
         <CoffeeBean 
           whenCoffeeBeanClicked = { props.onCoffeeBeanSelection }
+          brand={bean.brand}
           name={bean.name}
           origin={bean.origin}
           roast={bean.roast}
           price={Number(bean.price)}
           availability={Number(bean.availability)}
+          description={bean.description}
           id={bean.id}
           key={bean.id}/>
         )}
