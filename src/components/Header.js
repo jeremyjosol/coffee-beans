@@ -10,7 +10,7 @@ function Header({ scrollToControlSection }) {
           <br />
           <div className='columnTwo'>
             <h1>ORGANICALLY GROWN 
-              <span className='coffee-beans'>COFFEE BEANS</span> 
+              <span className='coffee-beans'> COFFEE BEANS </span> 
               ROASTED IN-HOUSE FOR A TASTY BREW.
             </h1>
             <div id="orderSection" className='order'>
