@@ -126,6 +126,7 @@ h1 {
 .image-container {
   flex: 2;
   padding: 20px;
+  margin-top: 100px;
 }
 
 .image-container img {
@@ -138,5 +139,9 @@ h1 {
   padding: 20px;
 }
 
+.btn-detail, .btn-delete {
+  width: 100px;
+  margin-top: 2px;
+}
 
 

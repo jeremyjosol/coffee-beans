@@ -18,12 +18,14 @@ function CoffeeBeanDetail(props) {
           <h5>${bean.price} per lb</h5>
           <h5>{bean.availability === 0 ? 'Out of Stock' : `${bean.availability} lbs available.`}</h5>
           <br />
-          <button className='btn btn-secondary btn-sm' onClick={props.onClickingSell}>Sell</button>
-          <button className='btn btn-secondary btn-sm' onClick={props.onClickingRestock}>Restock</button>
-          <button className='btn btn-secondary btn-sm' onClick={props.onClickingEdit}>Edit</button>
+          <button className='btn btn-secondary btn-detail' onClick={props.onClickingSell}>Sell</button>
+          <br />
+          <button className='btn btn-secondary btn-detail' onClick={props.onClickingRestock}>Restock</button>
+          <br />
+          <button className='btn btn-secondary btn-detail' onClick={props.onClickingEdit}>Edit</button>
           <br />
           <br />
-          <button className='btn btn-danger btn-sm' onClick={() => onClickingDelete(bean.id)}>Delete</button>
+          <button className='btn btn-danger btn-delete' onClick={() => onClickingDelete(bean.id)}>Delete</button>
           <br />
           <br />
         </div>
