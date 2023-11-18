@@ -15,7 +15,7 @@ code {
 .header {
   margin: auto;
   text-align: center;
-  background: url('img/coffee-beans.jpg') no-repeat center center fixed;
+  background: url('img/coffee-fields.jpg') no-repeat center center fixed;
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -65,11 +65,11 @@ h1 {
 }
 
 .coffee-beans {
-  color: rgb(207, 132, 57);
+  color: rgb(255, 255, 255);
 }
 
 .columns button {
-  background-color: #6fc071;
+  background-color: #c0996f;
   border-radius: 10px;
   color: white; 
   padding: 15px 32px;

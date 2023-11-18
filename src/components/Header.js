@@ -16,7 +16,7 @@ function Header() {
           <div className='columnTwo'>
             <h1>EXCLUSIVE <span className='coffee-beans'>COFFEE BEANS</span> ROASTED IN-HOUSE FOR YOUR SPECIAL BREW.</h1>
             <div id="orderSection" className='order'>
-              <button onClick={scrollToOrderSection}>ORDER NOW</button>
+              <button onClick={scrollToOrderSection}>EXPLORE</button>
             </div>
           </div>
         </div>
