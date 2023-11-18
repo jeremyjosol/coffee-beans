@@ -1,7 +1,7 @@
 # Coffee Beans
 
 ## About
-This project is a coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding/editing new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for various device sizes, and incorporates smooth scrolling functionality using React to enhance the user experience.
+This project is a 'Blue Bottle Coffee' themed coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding/editing new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for a diversity of device sizes, and incorporates smooth scrolling functionality using React to enhance the user experience.
 
 <img src='./src/img/coffee-beans-header.jpg'>
 
@@ -9,7 +9,7 @@ This project is a coffee bean inventory management system built using React. The
 
 <img src='./src/img/coffee-beans-cards.jpg'>
 
-> Each card will display an effect when hovered over, indicative of clickability.
+> Each card will display a minimalistic glow and pointer effect when hovered over, indicative of clickability.
 
 <img src='./src/img/coffee-beans-details.jpg'>
 
@@ -52,29 +52,21 @@ This project is a coffee bean inventory management system built using React. The
     
 ### `$ npm start`
 
-> Runs the app in the development mode. 
+* Runs the app in the development mode. 
 
-> * Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
+  * Open [http://localhost:3000](http://localhost:3000) to view it in your browser. 
 
-> * The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `$ npm test`
-
-> Launches the test runner in the interactive watch mode.
-
-> * See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  * The page will reload when you make changes. You may also see any lint errors in the console.
 
 ### `$ npm run build`
 
-> Builds the app for production to the `build` folder.
+* Builds the app for production to the `build` folder.
 
-> * It correctly bundles React in production mode and optimizes the build for the best performance.
+  * It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> * The build is minified and the filenames include the hashes.
+  * The build is minified and the filenames include the hashes.
 
 _Your app is ready to be deployed!_
-
-> * See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `$ npm run eject`
 
