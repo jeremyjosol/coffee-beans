@@ -12,6 +12,29 @@ code {
     monospace;
 }
 
+.navbar {
+  background-color: #548b4a7f; 
+  color: white;
+  padding: 5px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  color: green;
+}
+
+
+
 .header {
   margin: auto;
   text-align: center;
