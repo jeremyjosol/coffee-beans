@@ -21,11 +21,12 @@ function EditCoffeeBeanForm(props) {
   }
   
   return (  
-    <React.Fragment>
+    <div className='form'>
       <ReusableForm 
         formSubmissionHandler={handleEditCoffeeBeanFormSubmission} 
-        buttonText="Update Bean" />
-    </React.Fragment>
+        buttonText="UPDATE" />
+        <br />
+    </div>
   );
 }
 

@@ -19,14 +19,32 @@ function CoffeeBeanDetail(props) {
         <div className='details'>
           <h2>{bean.brand}</h2>
           <h3>{bean.name} | <em>{bean.origin}</em></h3>
-          <h5><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"></svg> {bean.roast}</h5>
+          <h5>{bean.roast}</h5>
           <p>{bean.description}</p>
           <h6>${bean.price} per lb | {bean.availability === 0 ? 'Out of Stock' : <strong>{bean.availability}</strong>} lbs available</h6>
           <br />
-          <button className='btn btn-secondary btn-detail' onClick={props.onClickingSell}>SELL</button> {' '}
-          <button className='btn btn-secondary btn-detail' onClick={props.onClickingRestock}>RESTOCK</button>
-          <button className='btn btn-secondary btn-detail' onClick={props.onClickingEdit}>EDIT</button> {' '}
-          <button className='btn btn-outline-danger btn-delete' onClick={() => onClickingDelete(bean.id)}>DELETE</button>
+          <button 
+            className='btn btn-secondary btn-detail' 
+            onClick={props.onClickingSell}>
+            SELL
+          </button> 
+          {' '}
+          <button 
+            className='btn btn-secondary btn-detail' 
+            onClick={props.onClickingRestock}>
+            RESTOCK
+          </button>
+          <button 
+            className='btn btn-secondary btn-detail' 
+            onClick={props.onClickingEdit}>
+            EDIT
+            </button> 
+            {' '}
+          <button 
+            className='btn btn-outline-danger btn-delete' 
+            onClick={() => onClickingDelete(bean.id)}>
+            DELETE
+          </button>
           <br />
           <br />
         </div>

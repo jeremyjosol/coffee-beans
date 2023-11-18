@@ -108,18 +108,18 @@ class CoffeeBeanControl extends React.Component {
   
       const newCoffeeBeanList = mainCoffeeBeanList.map((bean) =>
         bean.id === id && selectedCoffeeBean.availability > 0
-          ? { ...bean, availability: bean.availability - 1 }
-          : bean
+        ? { ...bean, availability: bean.availability - 1 }
+        : bean
       );
   
       return {
         mainCoffeeBeanList: newCoffeeBeanList,
         selectedCoffeeBean: {
-          ...selectedCoffeeBean,
-          availability:
-            selectedCoffeeBean.availability > 0
-              ? selectedCoffeeBean.availability - 1
-              : 0,
+        ...selectedCoffeeBean,
+        availability:
+          selectedCoffeeBean.availability > 0
+          ? selectedCoffeeBean.availability - 1
+          : 0,
         },
       };
     });
@@ -131,24 +131,24 @@ class CoffeeBeanControl extends React.Component {
   
       const newCoffeeBeanList = mainCoffeeBeanList.map((bean) =>
         bean.id === id && selectedCoffeeBean.availability < 130
-          ? { ...bean, availability: bean.availability + 1 }
-          : bean
+        ? { ...bean, availability: bean.availability + 1 }
+        : bean
       );
   
       return {
         mainCoffeeBeanList: newCoffeeBeanList,
         selectedCoffeeBean: {
-          ...selectedCoffeeBean,
-          availability:
-            selectedCoffeeBean.availability < 130
-              ? selectedCoffeeBean.availability + 1
-              : 130,
+        ...selectedCoffeeBean,
+        availability:
+          selectedCoffeeBean.availability < 130
+          ? selectedCoffeeBean.availability + 1
+          : 130,
         },
       };
     });
   };
   
-  render(){
+  render() {
     let arrowBackIcon = (
       <svg
         stroke="currentColor"
@@ -185,14 +185,17 @@ class CoffeeBeanControl extends React.Component {
     let buttonText = null;
 
     if (this.state.editing) {
-      currentlyVisibleState = <EditCoffeeBeanForm bean = {this.state.selectedCoffeeBean} onEditCoffeeBean = {this.handleEditingCoffeeBeanInList} />
+      currentlyVisibleState = <EditCoffeeBeanForm 
+      bean = {this.state.selectedCoffeeBean} 
+      onEditCoffeeBean = {this.handleEditingCoffeeBeanInList} />
       buttonText = (
         <div className='go-back'>
           {arrowBackIcon} GO BACK
         </div>
       )
     } else if (this.state.selectedCoffeeBean != null) {
-      currentlyVisibleState = <CoffeeBeanDetail bean = {this.state.selectedCoffeeBean} 
+      currentlyVisibleState = <CoffeeBeanDetail 
+      bean = {this.state.selectedCoffeeBean} 
       onClickingDelete = {this.handleDeletingCoffeeBean}
       onClickingEdit = {this.handleEditClick} 
       onClickingSell = {this.handleCoffeeBeanSale}
@@ -204,20 +207,24 @@ class CoffeeBeanControl extends React.Component {
       )
     }
     else if (this.state.formVisibleOnPage) {
-      currentlyVisibleState = <NewCoffeeBeanForm onNewCoffeeBeanCreation={this.handleAddNewCoffeeBeanToList}  />;
+      currentlyVisibleState = <NewCoffeeBeanForm 
+      onNewCoffeeBeanCreation={this.handleAddNewCoffeeBeanToList} />;
       buttonText = (
         <div className='go-back'>
           {arrowBackIcon} GO BACK
         </div>
       )
     } else {
-      currentlyVisibleState = <CoffeeBeanList coffeeBeanList={this.state.mainCoffeeBeanList} onCoffeeBeanSelection={this.handleChangingSelectedCoffeeBean} />;
-        buttonText = (
+      currentlyVisibleState = <CoffeeBeanList 
+      coffeeBeanList={this.state.mainCoffeeBeanList} 
+      onCoffeeBeanSelection={this.handleChangingSelectedCoffeeBean} />;
+      buttonText = (
         <React.Fragment>
           ADD NEW {addIcon} 
         </React.Fragment>
       );
     }
+    
     return (
       <React.Fragment>
         {currentlyVisibleState}
