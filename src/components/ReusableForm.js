@@ -26,7 +26,7 @@ function ReusableForm(props) {
           <input type='number' name='price' min='0' step='0.01' placeholder='PRICE PER LB' style={{ width: '250px' }} required />
         </div>
         <div className="form-control">
-          <input type='number' name='availability' min='0' max='130' placeholder='AVAILABILITY' style={{ width: '250px' }} required /> lbs
+          <input type='number' name='availability' min='0' max='130' placeholder='AVAILABILITY (lbs)' style={{ width: '250px' }} required /> 
         </div>
         <br />
         <button className="btn btn-secondary btn-submit" type="submit">{props.buttonText}</button>
