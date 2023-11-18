@@ -205,9 +205,24 @@ h1 {
   font-style: italic;
 }
 
-.blue-bottle {
+.blue-bottle, .roast, .availability {
   font-family: 'Montserrat', sans-serif;
 }
+
+.roast {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.availability {
+  font-size: 12px;
+}
+
+.name {
+  font-weight: lighter;
+  color: rgb(55, 55, 55);
+}
+
 
 .logo-image {
   width: 75px;
