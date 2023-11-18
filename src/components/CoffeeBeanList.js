@@ -1,6 +1,6 @@
-import React from "react";
-import CoffeeBean from "./CoffeeBean";
-import PropTypes from "prop-types";
+import React from 'react';
+import CoffeeBean from './CoffeeBean';
+import PropTypes from 'prop-types';
 
 function CoffeeBeanList(props) {
 

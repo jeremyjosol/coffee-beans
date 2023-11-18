@@ -1,12 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function ReusableForm(props) {
   return (
     <React.Fragment>
       <h1>NEW COFFEE BEAN</h1>
       <form onSubmit={props.formSubmissionHandler}>
-        <div className="form-control">
+        <div className='form-control'>
           <input 
             type='text' 
             name='brand' 
@@ -14,7 +14,7 @@ function ReusableForm(props) {
             style={{ width: '250px' }} 
             required />
         </div>
-        <div className="form-control">
+        <div className='form-control'>
           <input 
             type='text' 
             name='name' 
@@ -22,14 +22,14 @@ function ReusableForm(props) {
             style={{ width: '250px' }} 
             required />
         </div>
-        <div className="form-control">
+        <div className='form-control'>
           <input 
             type='text' 
             name='origin' 
             placeholder='ORIGIN' 
             style={{ width: '250px' }} required />
         </div>
-        <div className="form-control">
+        <div className='form-control'>
           <input 
             type='text' 
             name='roast' 
@@ -37,7 +37,7 @@ function ReusableForm(props) {
             style={{ width: '250px' }} 
             required /> 
         </div>
-        <div className="form-control" style={{ height: '180px' }}>
+        <div className='form-control' style={{ height: '180px' }}>
           <input 
             type='text' 
             name='description' 
@@ -45,7 +45,7 @@ function ReusableForm(props) {
             style={{ width: '250px', height: '160px' }} 
             required /> 
         </div>
-        <div className="form-control">
+        <div className='form-control'>
           $
           <input 
             type='number' 
@@ -56,7 +56,7 @@ function ReusableForm(props) {
             style={{ width: '250px' }} 
             required />
         </div>
-        <div className="form-control">
+        <div className='form-control'>
           <input 
             type='number' 
             name='availability' 
@@ -67,7 +67,7 @@ function ReusableForm(props) {
             required /> 
         </div>
         <br />
-        <button className="btn btn-secondary btn-submit" type="submit">{props.buttonText}</button>
+        <button className='btn btn-secondary btn-submit' type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>
   );

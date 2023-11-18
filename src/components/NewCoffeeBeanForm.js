@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
-import ReusableForm from "./ReusableForm";
+import ReusableForm from './ReusableForm';
 
 function NewCoffeeBeanForm(props){
   
@@ -24,7 +24,7 @@ function NewCoffeeBeanForm(props){
     <div className='form'>
       <ReusableForm 
         formSubmissionHandler={handleNewCoffeeBeanFormSubmission}
-        buttonText="SUBMIT" />
+        buttonText='SUBMIT' />
         <br />
     </div>
   );

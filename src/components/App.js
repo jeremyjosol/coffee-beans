@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import CoffeeBeanControl from "./CoffeeBeanControl";
+import React from 'react';
+import Navbar from './Navbar';
+import Header from './Header';
+import CoffeeBeanControl from './CoffeeBeanControl';
 
 function App() {
   const scrollToControlSection = () => {
@@ -14,10 +14,10 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="header">
+      <div className='header'>
         <Header scrollToControlSection={scrollToControlSection} />
       </div>
-      <div id="controlSection" className="control">
+      <div id='controlSection' className='control'>
         <CoffeeBeanControl />
       </div>
     </React.Fragment>
