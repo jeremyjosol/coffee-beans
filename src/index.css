@@ -89,8 +89,8 @@ h1 {
 }
 
 .columns button {
-  background-color: #5555558e;
-  color: white; 
+  background-color: #ffffff5b;
+  color: black; 
   height: 60px;
   padding: 15px 32px;
   text-align: center;
@@ -100,10 +100,12 @@ h1 {
   cursor: pointer;
   border: none;
   font-family: 'Montserrat', sans-serif;
+  outline: none;
 }
 
 .columns button:hover {
-  background-color: #a2a2a2f9;
+  background-color: #00000074;
+  color: white;
 
 }
 
