@@ -9,7 +9,7 @@ function CoffeeBeanDetail(props){
         <h3>{bean.name} | {bean.origin}</h3>
         <h5>{bean.roast}</h5>
         <h5>${bean.price} per lb.</h5>
-        <h5>{bean.availability} lbs available.</h5>    
+        <h5>{bean.availability === 0 ? 'Out of Stock' : `${bean.availability} lbs available.`}</h5>
         <br />
         <button onClick={ props.onClickingSell }>Sell</button>
         <button onClick={ props.onClickingRestock }>Restock</button>
