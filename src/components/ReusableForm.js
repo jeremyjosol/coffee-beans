@@ -20,6 +20,7 @@ function ReusableForm(props) {
         <div className="form-control">
           <input type='number' name='availability' min='0' max='130' placeholder='Lbs available' required />
         </div>
+        <br />
         <button className="btn btn-success" type="submit">{props.buttonText}</button>
       </form>
     </React.Fragment>

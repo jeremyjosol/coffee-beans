@@ -166,7 +166,8 @@ class CoffeeBeanControl extends React.Component {
     return (
       <React.Fragment>
         {currentlyVisibleState}
-        <button onClick={this.handleAddButtonClick}>{buttonText}</button>
+        <button className='btn btn-success' onClick={this.handleAddButtonClick}>{buttonText}</button>
+        <br />
       </React.Fragment>
     );
   }

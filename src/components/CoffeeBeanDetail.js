@@ -11,11 +11,12 @@ function CoffeeBeanDetail(props){
         <h5>${bean.price} per lb.</h5>
         <h5>{bean.availability === 0 ? 'Out of Stock' : `${bean.availability} lbs available.`}</h5>
         <br />
-        <button onClick={ props.onClickingSell }>Sell</button>
-        <button onClick={ props.onClickingRestock }>Restock</button>
+        <button className='btn btn-secondary btn-sm' onClick={ props.onClickingSell }>Sell</button>
+        <button className='btn btn-secondary btn-sm' onClick={ props.onClickingRestock }>Restock</button>
+        <button className='btn btn-secondary btn-sm' onClick={ props.onClickingEdit }>Edit</button> 
         <br />
-        <button onClick={ props.onClickingEdit }>Edit</button> 
-        <button onClick={()=> onClickingDelete(bean.id) }>Delete</button>
+        <br />
+        <button className='btn btn-danger btn-sm' onClick={()=> onClickingDelete(bean.id) }>Delete</button>
         <br />
         <br />
         </React.Fragment>
