@@ -1,13 +1,6 @@
 import React from "react";
 
-function Header() {
-  const scrollToOrderSection = () => {
-    const orderSection = document.getElementById('orderSection');
-    if (orderSection) {
-      orderSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
+function Header({ scrollToControlSection }) {
   return (
     <div className='header'>
       <div className='columns'>
@@ -20,7 +13,7 @@ function Header() {
             <div id="orderSection" className='order'>
               <br />
               <br />
-              <button onClick={scrollToOrderSection}>EXPLORE</button>
+              <button onClick={scrollToControlSection}>EXPLORE</button>
             </div>
           </div>
         </div>

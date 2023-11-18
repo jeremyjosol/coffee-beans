@@ -3,16 +3,23 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import CoffeeBeanControl from "./CoffeeBeanControl";
 
-function App(){
-  return ( 
+function App() {
+  const scrollToControlSection = () => {
+    const controlSection = document.getElementById('controlSection');
+    if (controlSection) {
+      controlSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  return (
     <React.Fragment>
       <div className="navbar">
         <Navbar />
       </div>
       <div className="header">
-        <Header />
+        <Header scrollToControlSection={scrollToControlSection} />
       </div>
-      <div className="control">
+      <div id="controlSection" className="control">
         <CoffeeBeanControl />
       </div>
     </React.Fragment>
