@@ -1,6 +1,5 @@
 import React from "react";
-import logo from ".././img/blue-bottle.jpg";
-import Navbar from "./Navbar";
+import PropTypes from "prop-types";
 
 function Header({ scrollToControlSection }) {
   
@@ -27,5 +26,9 @@ function Header({ scrollToControlSection }) {
     </div>
   );
 }
+
+Header.propTypes = {
+  scrollToControlSection: PropTypes.func,
+};
 
 export default Header;
