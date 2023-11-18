@@ -13,8 +13,11 @@ function CoffeeBeanDetail(props){
         <br />
         <button onClick={ props.onClickingSell }>Sell</button>
         <button onClick={ props.onClickingRestock }>Restock</button>
+        <br />
         <button onClick={ props.onClickingEdit }>Edit</button> 
         <button onClick={()=> onClickingDelete(bean.id) }>Delete</button>
+        <br />
+        <br />
         </React.Fragment>
     );
 }

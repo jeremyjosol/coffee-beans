@@ -4,7 +4,7 @@ function Header() {
   const scrollToOrderSection = () => {
     const orderSection = document.getElementById('orderSection');
     if (orderSection) {
-      orderSection.scrollIntoView({ behavior: 'smooth' });
+      orderSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 

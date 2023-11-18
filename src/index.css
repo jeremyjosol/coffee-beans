@@ -33,8 +33,6 @@ code {
   color: green;
 }
 
-
-
 .header {
   margin: auto;
   text-align: center;
@@ -49,17 +47,6 @@ code {
   font-family: 'Oswald', sans-serif;
   position: relative;
 }
-
-/* .header::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.101); 
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-} */
 
 .columns {
   display: flex;
@@ -107,6 +94,13 @@ h1 {
 .hero {
   font-size: 4em;
   color: rgb(255, 255, 255);
+}
+
+.control {
+  margin: auto;
+  text-align: center;
+  max-width: 550px;
+  margin-bottom: 25px;
 }
 
 
