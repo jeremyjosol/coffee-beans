@@ -76,7 +76,8 @@ h1 {
 
 .coffee-bean {
   margin: auto;
-  margin-top: 75px;
+  margin-top: 90px;
+  padding-top: 10px;
 }
 
 .coffee-bean:hover {
