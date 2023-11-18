@@ -6,22 +6,22 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <div className="form-control">
-          <input type='text' name='name' placeholder='Coffee Bean Name' required />
+          <input type='text' name='name' placeholder='COFFEE BEAN NAME' style={{ width: '250px' }} required />
         </div>
         <div className="form-control">
-          <input type='text' name='origin' placeholder='Country of Origin' required />
+          <input type='text' name='origin' placeholder='COUNTRY OF ORIGIN' style={{ width: '250px' }} required />
         </div>
         <div className="form-control">
-          <input type='text' name='roast' placeholder='Roast' required /> 
+          <input type='text' name='roast' placeholder='ROAST TYPE' style={{ width: '250px' }} required /> 
         </div>
         <div className="form-control">
-          <input type='number' name='price' min='0' step='0.01' placeholder='Price per lb' required />
+          <input type='number' name='price' min='0' step='0.01' placeholder='PRICE PER LB' style={{ width: '250px' }} required />
         </div>
         <div className="form-control">
-          <input type='number' name='availability' min='0' max='130' placeholder='Lbs available' required />
+          <input type='number' name='availability' min='0' max='130' placeholder='AVAILABILITY' style={{ width: '250px' }} required />
         </div>
         <br />
-        <button className="btn btn-success" type="submit">{props.buttonText}</button>
+        <button className="btn btn-secondary btn-submit" type="submit">{props.buttonText}</button>
       </form>
     </React.Fragment>
   );

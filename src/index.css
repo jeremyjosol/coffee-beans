@@ -109,7 +109,7 @@ h1 {
   max-width: 750px;
 } 
 
-.details-container {
+.details-container{
   margin: auto;
   margin-top: 200px;
   margin-bottom: 200px;
@@ -142,6 +142,29 @@ h1 {
 .btn-detail, .btn-delete {
   width: 100px;
   margin-top: 2px;
+}
+
+.form {
+  margin: auto;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  width: 350px;
+}
+
+.form-control input {
+  text-align: center;
+  border: none;
+}
+
+.form-control {
+  margin: auto;
+  margin-top: 15px;
+}
+
+.btn-submit {
+  width: 350px;
 }
 
 

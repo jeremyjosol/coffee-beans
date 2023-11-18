@@ -9,7 +9,7 @@ function CoffeeBeanDetail(props) {
   return (
     <React.Fragment>
       <div className='details-container'>
-      <div className='image-container'>
+        <div className='image-container'>
           <img src={imgCoffeeBeans} alt='Coffee Beans' />
         </div>
         <div className='details'>
