@@ -21,7 +21,23 @@ class CoffeeBeanControl extends React.Component {
           price: 15.99,
           availability: 130,
           id: v4()
-        }
+        },
+        {
+          name: 'Blue Bottle Coffee Three Africas',
+          origin: 'Ethiopia, Central Africa',
+          roast: 'Medium Roast',
+          price: 13.00,
+          availability: 90,
+          id: v4()
+        },
+        {
+          name: 'Blue Bottle Coffee Bella Donovan',
+          origin: 'Ethiopia',
+          roast: 'Dark Roast',
+          price: 13.00,
+          availability: 75,
+          id: v4()
+        },
       ]
     }
   }
