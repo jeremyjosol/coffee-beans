@@ -14,10 +14,16 @@ code {
 
 .header {
   margin: auto;
-  margin-top: 25px;
   text-align: center;
   border: 1px solid black;
-  width: 450px;
+  background: url('img/coffee-beans.jpg') no-repeat center center fixed;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; 
 }
+
 
 

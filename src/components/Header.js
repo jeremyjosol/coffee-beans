@@ -1,11 +1,15 @@
 import React from "react";
 
-
-function Header(){
+function Header() {
   return (
-    <React.Fragment>
-      <h1>Coffee Header</h1>
-    </React.Fragment>
+    <div className='header'>
+      <div className='column'>
+        <h1>Exclusive coffee beans roasted in-house</h1>
+      </div>
+      <div className='column'>
+        <button>ORDER NOW</button>
+      </div>
+    </div>
   );
 }
 
