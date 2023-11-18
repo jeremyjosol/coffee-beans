@@ -12,25 +12,28 @@ code {
 }
 
 .navbar {
-  background-color: #fffcf0;
   color: black;
-  padding: 5px;
+  padding: 0;
+  margin: auto;
 }
 
 .nav-links {
+  padding: 0;
+  background: transparent;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin-right: 100px;
 }
 
 .nav-links a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .nav-links a:hover {
-  color: green;
+  color: rgb(85, 195, 255);
 }
 
 .header {
@@ -86,9 +89,9 @@ h1 {
 }
 
 .columns button {
-  background-color: #d88c3a5b;
-  border-radius: 10px;
+  background-color: #5555558e;
   color: white; 
+  height: 60px;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -96,10 +99,12 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   border: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .columns button:hover {
-  background-color: #cfa272c1;
+  background-color: #a2a2a2f9;
+
 }
 
 .hero {

@@ -1,6 +1,8 @@
 import React from "react";
+import logo from ".././img/blue-bottle.jpg";
 
 function Header({ scrollToControlSection }) {
+  
   return (
     <div className='header'>
       <div className='columns'>
