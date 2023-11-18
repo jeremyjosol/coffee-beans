@@ -21,7 +21,7 @@ function CoffeeBeanDetail(props) {
           <h3>{bean.name} | <em>{bean.origin}</em></h3>
           <h5>{bean.roast}</h5>
           <p>{bean.description}</p>
-          <h6>${bean.price} per lb | {bean.availability === 0 ? <span className='out-of-stock'>Out of Stock</span> : <strong>{bean.availability} available</strong>}</h6>
+          <h6>${bean.price} per lb | {bean.availability === 0 ? <span className='out-of-stock'>Out of Stock</span> : <strong className='available'>{bean.availability} available</strong>}</h6>
           <br />
           <button 
             className='btn btn-secondary btn-detail' 
