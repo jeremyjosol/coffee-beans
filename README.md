@@ -1,9 +1,19 @@
-# Coffee Bean Supply
+# Coffee Beans
 
 ## About
-This project is a coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for various device sizes, and incorporates smooth scrolling functionality using React to enhance the user experience.
+This project is a coffee bean inventory management system built using React. The application is designed to showcase a variety of coffee beans, providing information such as brand, name, origin, roast type, a brief description, price, and availability. The user interface is built using React components, including dynamic rendering for detailed coffee bean information and forms for adding/editing new beans to the inventory. The application utilizes React state management to handle various states, allowing users to navigate between viewing, adding, editing, and deleting coffee beans. Additionally, the project features responsive design, making it suitable for various device sizes, and incorporates smooth scrolling functionality using React to enhance the user experience.
 
-<img src="./src/img/coffee-shop-diagram.jpg">
+<img src='./src/img/coffee-beans-header.jpg'>
+
+> Clicking 'EXPLORE' will scroll to the main list of coffee beans.
+
+<img src='./src/img/coffee-beans-cards.jpg'>
+
+> Each card will display an effect when hovered over, indicative of clickability.
+
+<img src='./src/img/coffee-beans-details.jpg'>
+
+> Once a card is clicked, its details are shown, where inventory management is accessible.
 
 ## Technologies Used
 
@@ -14,19 +24,23 @@ This project is a coffee bean inventory management system built using React. The
 * _Bootstrap_
 * _Javascript_
 * _React_
+* _draw.io_
+
+> #### draw.io Diagram
+<img src='./src/img/coffee-beans-diagram.jpg'>
 
 ### Prerequisuites
 > _Your computer or codespace should use **Node.js version 16** or greater. For more information, see_ [Node.js](https://nodejs.org/en).
 
 ## Application Setup
 
-1. Clone the [repository](https://github.com/jeremyjosol/coffee-shop) by either copying the link or entering the command in your terminal:
+1. Clone the [repository](https://github.com/jeremyjosol/coffee-beans) by either copying the link or entering the command in your terminal:
     ```
-     $ git clone https://github.com/jeremyjosol/coffee-shop.git
+     $ git clone https://github.com/jeremyjosol/coffee-beans.git
     ```
-2. After successfully cloning down the repository, navigate to the **'coffee-shop'** directory:
+2. After successfully cloning down the repository, navigate to the **'coffee-beans'** directory:
       ```
-       $ cd coffee-shop
+       $ cd coffee-beans
       ```
 3. Before you can use or deploy the project, make sure to install its dependencies. Run the following command in your terminal:
 
