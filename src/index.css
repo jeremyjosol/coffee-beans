@@ -27,7 +27,7 @@ code {
   position: relative;
 }
 
-.header::before {
+/* .header::before {
   content: "";
   background: rgba(0, 0, 0, 0.101); 
   position: absolute;
@@ -36,7 +36,7 @@ code {
   right: 0;
   bottom: 0;
   z-index: 0;
-}
+} */
 
 .columns {
   display: flex;
@@ -58,7 +58,6 @@ code {
 
 .order {
   flex: 2;
-  max-width: 25
 }
 
 h1 {
@@ -69,7 +68,7 @@ h1 {
   color: rgb(207, 132, 57);
 }
 
-.column button {
+.columns button {
   background-color: #6fc071;
   border-radius: 10px;
   color: white; 
